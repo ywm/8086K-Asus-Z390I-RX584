@@ -224,7 +224,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AwCRPg==</data>
+				<data>AwCSPg==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
@@ -421,7 +421,7 @@
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportBrcmFixup</string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>22.9.9</string>
 				<key>MinKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -457,9 +457,9 @@
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>22.9.9</string>
 				<key>MinKernel</key>
-				<string></string>
+				<string>17.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -475,9 +475,9 @@
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/NVMeFix</string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>22.9.9</string>
 				<key>MinKernel</key>
-				<string></string>
+				<string>18.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -734,6 +734,8 @@
 			<false/>
 			<key>DisableIoMapper</key>
 			<false/>
+			<key>DisableIoMapperMapping</key>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -787,8 +789,12 @@
 			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>HibernateSkipsPicker</key>
+			<false/>
 			<key>HideAuxiliary</key>
 			<false/>
+			<key>InstanceIdentifier</key>
+			<string></string>
 			<key>LauncherOption</key>
 			<string>Full</string>
 			<key>LauncherPath</key>
@@ -957,6 +963,7 @@
 				<string>prev-lang:kbd</string>
 				<string>efi-boot-device</string>
 				<string>efi-boot-device-data</string>
+				<string>backlight-level</string>
 			</array>
 			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
 			<array>
@@ -981,7 +988,7 @@
 			<key>AdviseFeatures</key>
 			<true/>
 			<key>MLB</key>
-			<string>XXXXXXXXXXXXXXXXX</string>
+			<string>C02020802J9KGQGFB</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -995,9 +1002,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,2</string>
 			<key>SystemSerialNumber</key>
-			<string>ZZZZZZZZZZZZ</string>
+			<string>C02CQPYKJWDW</string>
 			<key>SystemUUID</key>
-			<string>AAAAAAAA-BVBB-CCCC-DSDD-EEEEEEEEEEEE</string>
+			<string>46DB1534-0FAD-496E-B223-E8CFBBA29A72</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1157,16 +1164,22 @@
 		<dict>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
+			<key>ConsoleFont</key>
+			<string></string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
 			<false/>
 			<key>ForceResolution</key>
 			<false/>
+			<key>GopBurstMode</key>
+			<false/>
 			<key>GopPassThrough</key>
 			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
+			<key>InitialMode</key>
+			<string>Auto</string>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectGraphicsOnConnect</key>
@@ -1222,6 +1235,8 @@
 			<false/>
 			<key>OSInfo</key>
 			<false/>
+			<key>PciIo</key>
+			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
 		</dict>
@@ -1251,6 +1266,8 @@
 			<true/>
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
+			<key>ResizeUsePciRbIo</key>
+			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
